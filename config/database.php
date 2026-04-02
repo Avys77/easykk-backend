@@ -1,8 +1,8 @@
 <?php
-$host = getenv('MYSQLHOST') ?: getenv('DB_HOST') ?: 'localhost';
-$user = getenv('MYSQLUSER') ?: getenv('DB_USER') ?: 'root';
-$pass = getenv('MYSQLPASSWORD') ?: getenv('DB_PASS') ?: '';
-$name = getenv('MYSQLDATABASE') ?: getenv('DB_NAME') ?: 'railway';
+$host = getenv('MYSQLHOST') ?: 'localhost';
+$user = getenv('MYSQLUSER') ?: 'root';
+$pass = getenv('MYSQLPASSWORD') ?: '';
+$name = getenv('MYSQLDATABASE') ?: 'railway';
 $port = getenv('MYSQLPORT') ?: '3306';
 
 function getConnection() {
